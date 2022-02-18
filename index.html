@@ -22,8 +22,6 @@
     <link rel="stylesheet" href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-
-
     <title>Calculator</title>
 
 </head>
@@ -77,44 +75,42 @@
 
       
 
-          <input id="t"  class="show" type="text" value="" autocomplete="off" readonly>
-          <br>
-          <input  type="button" onclick="buttonclick(this)" class="b7 darkthema_calcbtn" value="7">
-          <input  type="button" onclick="buttonclick(this)" class="b8 darkthema_calcbtn" value="8">
-          <input  type="button" onclick="buttonclick(this)" class="b9 darkthema_calcbtn" value="9">
-          <input  type="button" onclick="removelastlick()" class="back darkthema_calcbtn" value="←">
+        <input id="t"  class="show" type="text" value="" autocomplete="off" readonly>
+        <br>
+        <input  type="button" onclick="buttonclick(this)" class="b7 darkthema_calcbtn" value="7">
+        <input  type="button" onclick="buttonclick(this)" class="b8 darkthema_calcbtn" value="8">
+        <input  type="button" onclick="buttonclick(this)" class="b9 darkthema_calcbtn" value="9">
+        <input  type="button" onclick="removelastlick()" class="back darkthema_calcbtn" value="←">
+        <input  type="button" onclick="buttonclick(this)" class="b4 darkthema_calcbtn" value="4">
+        <input  type="button" onclick="buttonclick(this)" class="b5 darkthema_calcbtn" value="5">
+        <input  type="button" onclick="buttonclick(this)" class="b6 darkthema_calcbtn" value="6">
+        <input  type="button" onclick="buttonclick(this)" class="divide darkthema_calcbtn" value="/">
 
-          <input  type="button" onclick="buttonclick(this)" class="b4 darkthema_calcbtn" value="4">
-          <input  type="button" onclick="buttonclick(this)" class="b5 darkthema_calcbtn" value="5">
-          <input  type="button" onclick="buttonclick(this)" class="b6 darkthema_calcbtn" value="6">
-          <input  type="button" onclick="buttonclick(this)" class="divide darkthema_calcbtn" value="/">
+        <input  type="button" onclick="buttonclick(this)" class="b1 darkthema_calcbtn" value="1">
+        <input  type="button" onclick="buttonclick(this)" class="b2 darkthema_calcbtn" value="2">
+        <input  type="button" onclick="buttonclick(this)" class="b3 darkthema_calcbtn" value="3">
+        <input  type="button" onclick="buttonclick(this)" class="multiple darkthema_calcbtn" value="*">
 
-          <input  type="button" onclick="buttonclick(this)" class="b1 darkthema_calcbtn" value="1">
-          <input  type="button" onclick="buttonclick(this)" class="b2 darkthema_calcbtn" value="2">
-          <input  type="button" onclick="buttonclick(this)" class="b3 darkthema_calcbtn" value="3">
-          <input  type="button" onclick="buttonclick(this)" class="multiple darkthema_calcbtn" value="*">
+        <input  type="button" onclick="buttonclick(this)" class="b0 darkthema_calcbtn" value="0">
+        <!-- <input id="minplusinput" title="Left click change. Right click select."  type="button"  class="percent darkthema_calcbtn" onmouseup="whichButton(event);" oncontextmenu="event.preventDefault();" value="-/+"> -->
+        <input id="percent" type="button"  class="percent darkthema_calcbtn" onclick="buttonclickpercent(this)" value="%">
+        <input  type="button" onclick="buttonclick(this)" class="dot darkthema_calcbtn" value=".">
+        <input  type="button" onclick="buttonclick(this)" class="addition darkthema_calcbtn" value="+">
 
-          <input  type="button" onclick="buttonclick(this)" class="b0 darkthema_calcbtn" value="0">
-          <!-- <input id="minplusinput" title="Left click change. Right click select."  type="button"  class="percent darkthema_calcbtn" onmouseup="whichButton(event);" oncontextmenu="event.preventDefault();" value="-/+"> -->
-          <input id="percent" type="button"  class="percent darkthema_calcbtn" onclick="buttonclickpercent(this)" value="%">
-          <input  type="button" onclick="buttonclick(this)" class="dot darkthema_calcbtn" value=".">
-          <input  type="button" onclick="buttonclick(this)" class="addition darkthema_calcbtn" value="+">
+        <input type="button" onclick="cleartext()" class="clearall darkthema_calcbtn" value="C">
+        <input type="button" onclick="buttonclicknthroot(this)" class="nthroot darkthema_calcbtn" value="√">
+        <input type="button" onclick="calc()" class="equals darkthema_calcbtn" value="=">
+        <input type="button" onclick="buttonclick(this)" class="minus darkthema_calcbtn" value="-">
 
-          <input type="button" onclick="cleartext()" class="clearall darkthema_calcbtn" value="C">
-          <input type="button" onclick="buttonclicknthroot(this)" class="nthroot darkthema_calcbtn" value="√">
-          <input type="button" onclick="calc()" class="equals darkthema_calcbtn" value="=">
-          <input type="button" onclick="buttonclick(this)" class="minus darkthema_calcbtn" value="-">
-
+          
 
       
 
       </div>
 
   
+    </div>
       
-  
-    
-
   </div>
 
 
