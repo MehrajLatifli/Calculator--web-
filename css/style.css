@@ -231,9 +231,6 @@ body{
 
 .logo{
       
-
-
-    
     margin-left: 10px;
     margin-top: 10px;
 
@@ -250,12 +247,6 @@ body{
     width: 100%;
 
     
-
-
-
-
- 
-  
 }
 #togglebutton{
     /* -webkit-appearance: none; */
@@ -269,7 +260,6 @@ body{
     border-radius: 20px;
     outline: none;
     cursor: pointer;
-
 
 }
 
