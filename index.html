@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="files/calculator_logo.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="files/calculator_logo.png" rel="apple-touch-icon" sizes="200x200">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/index.js"></script>
+    
+    <script src="https://kit.fontawesome.com/a8a2b51495.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="bootstrap/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="bootstrap/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+
+    <title>Calculator</title>
+
+</head>
+<body class="container-fluid">
+    
+
+  
+  <div class="container-fluid animationforbackround">
+
+    <div class="container-fluid animationforbackround " >
+
+      <div class="boxarea">
+     
+        <div class="boxarea_inline1"></div>
+        <div class="boxarea_inline1"></div>
+        <div class="boxarea_inline1"></div>
+        <div class="boxarea_inline1"></div>
+
+
+      </div>
+
+      
+      <div class="boxarea">
+
+        <div class="boxarea_inline2"></div>
+        <div class="boxarea_inline2"></div>
+        <div class="boxarea_inline2"></div>
+        <div class="boxarea_inline2"></div>
+
+      </div>
+
+      <div class=" calculatordesign calculatorcontainer">
+
+        <div class="header">
+
+          <div class="logo">
+
+            <img src="files/logo.png" alt="">
+  
+          </div>
+          
+          <div class=" togglebuttonarea">
+  
+            <input type="checkbox" id="togglebutton">
+  
+          </div>
+
+        </div>
+
+
+
+      
+
+          <input id="t"  class="show" type="text" value="" autocomplete="off" readonly>
+          <br>
+          <input  type="button" onclick="buttonclick(this)" class="b7 darkthema_calcbtn" value="7">
+          <input  type="button" onclick="buttonclick(this)" class="b8 darkthema_calcbtn" value="8">
+          <input  type="button" onclick="buttonclick(this)" class="b9 darkthema_calcbtn" value="9">
+          <input  type="button" onclick="removelastlick()" class="back darkthema_calcbtn" value="←">
+
+          <input  type="button" onclick="buttonclick(this)" class="b4 darkthema_calcbtn" value="4">
+          <input  type="button" onclick="buttonclick(this)" class="b5 darkthema_calcbtn" value="5">
+          <input  type="button" onclick="buttonclick(this)" class="b6 darkthema_calcbtn" value="6">
+          <input  type="button" onclick="buttonclick(this)" class="divide darkthema_calcbtn" value="/">
+
+          <input  type="button" onclick="buttonclick(this)" class="b1 darkthema_calcbtn" value="1">
+          <input  type="button" onclick="buttonclick(this)" class="b2 darkthema_calcbtn" value="2">
+          <input  type="button" onclick="buttonclick(this)" class="b3 darkthema_calcbtn" value="3">
+          <input  type="button" onclick="buttonclick(this)" class="multiple darkthema_calcbtn" value="*">
+
+          <input  type="button" onclick="buttonclick(this)" class="b0 darkthema_calcbtn" value="0">
+          <!-- <input id="minplusinput" title="Left click change. Right click select."  type="button"  class="percent darkthema_calcbtn" onmouseup="whichButton(event);" oncontextmenu="event.preventDefault();" value="-/+"> -->
+          <input id="percent" type="button"  class="percent darkthema_calcbtn" onclick="buttonclickpercent(this)" value="%">
+          <input  type="button" onclick="buttonclick(this)" class="dot darkthema_calcbtn" value=".">
+          <input  type="button" onclick="buttonclick(this)" class="addition darkthema_calcbtn" value="+">
+
+          <input type="button" onclick="cleartext()" class="clearall darkthema_calcbtn" value="C">
+          <input type="button" onclick="buttonclicknthroot(this)" class="nthroot darkthema_calcbtn" value="√">
+          <input type="button" onclick="calc()" class="equals darkthema_calcbtn" value="=">
+          <input type="button" onclick="buttonclick(this)" class="minus darkthema_calcbtn" value="-">
+
+
+      
+
+      </div>
+
+  
+      
+  
+    
+
+  </div>
+
+
+
+</body>
+</html>

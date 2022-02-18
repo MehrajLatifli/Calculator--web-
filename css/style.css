@@ -1,0 +1,495 @@
+body{
+    position: relative;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size: 2em !important;
+}
+
+.animationforbackround{
+    background: linear-gradient(to left,#00adfd,#0c4370);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.boxarea{
+    position:absolute;
+    display: inline-block;
+    margin: auto;
+    right: 0;
+    overflow: hidden;
+
+    width: 91% !important;
+    height: 100% !important;
+    top: 0;
+    left: 0% !important;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    
+}
+
+.boxarea_inline1{
+
+    position:absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: ainmation 10s linear infinite;
+    bottom: 0px;
+    left:5px;
+
+}
+
+.boxarea_inline2{
+
+    position:absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animation2 10s linear infinite;
+    bottom: 0px;
+    left:5px;
+
+}
+
+
+.boxarea_inline1:nth-child(1){
+    left: 1%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.boxarea_inline1:nth-child(2){
+    left: 29%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.boxarea_inline1:nth-child(3){
+    left: 55%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.boxarea_inline1:nth-child(4){
+    left: 90%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 0s;
+}
+
+.boxarea_inline2:nth-child(1){
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.boxarea_inline2:nth-child(2){
+    left: 21%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.boxarea_inline2:nth-child(3){
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+}
+
+.boxarea_inline2:nth-child(4){
+    left: 75%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+
+@keyframes ainmation {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-400px) rotate(180deg);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+@keyframes animation2 {
+    0%{
+        transform: translateY(-800px) rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(-400px) rotate(180deg);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+.calculatordesign, .b7, .b8, .b9, .back, .b4, .b5, .b6, .divide, .b1, .b2, .b3, .multiple, .b0, .percent, .dot, .addition, .clearall, .nthroot, .equals, .minus{
+    position: relative;
+    background-color: rgba(0, 173, 253, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter:blur(10px);
+    border-top:1px solid rgba(255, 255, 255, 0.2);
+    border-left:1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:5px 5px 30px solid rgba(0, 0, 0, 0.2);
+    border:1px solid white;
+    color:white;
+
+
+}
+
+
+.calculatorcontainer{
+    display: inline-grid;
+    grid-template-areas: 
+
+    '. header header header header header header header header .'
+    '. header header header header header header header header .'
+    '. show show show show show show show show .'
+    '. show show show show show show show show .'
+    '. b7 b7 b8 b8 b9 b9 back back .'
+    '. b7 b7 b8 b8 b9 b9 back back .'
+    '. b4 b4 b5 b5 b6 b6 divide divide .'
+    '. b4 b4 b5 b5 b6 b6 divide divide .'
+    '. b1 b1 b2 b2 b3 b3 multiple multiple .'
+    '. b1 b1 b2 b2 b3 b3 multiple multiple .'
+    '. b0 b0 percent percent dot dot addition addition .'
+    '. b0 b0 percent percent dot dot addition addition .'
+    '. clearall clearall nthroot nthroot equals equals minus minus .'
+    '. clearall clearall nthroot nthroot equals equals minus minus .'
+    '. . . . . . . . . .';
+    
+    
+     gap: 10px;
+    
+    
+    /* text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center; */
+    position: relative;
+    width: 50%;
+    height: 50%;
+    top:25%;
+}
+
+
+.header{
+      
+    position: relative;
+    grid-area: header;
+        
+    display: inline-flex;
+    
+    box-sizing: border-box;
+
+    text-align: left;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+    justify-items: left;
+
+    
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+}
+
+.logo{
+      
+
+
+    
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+}
+
+.logo>img{
+      
+ width: 50%;
+    
+}
+
+.togglebuttonarea{
+    width: 100%;
+
+    
+
+
+
+
+ 
+  
+}
+#togglebutton{
+    /* -webkit-appearance: none; */
+    appearance: none;
+    height: 40px;
+    width: 75px;
+    background-color: #15181f;
+    position: absolute;
+    right: 0;
+
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+
+
+}
+
+
+
+#togglebutton::before{
+    content: "";
+    position:absolute;
+    /* background-color: #000000; */
+    top: 5px;
+    left: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+#togglebutton:after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 7px;
+    border-radius: 50%;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.darkthema{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter:blur(10px);
+    border-top:1px solid rgba(0, 0, 0, 0.2);
+    border-left:1px solid rgba(0, 0, 0, 0.2);
+    box-shadow:5px 5px 30px solid rgba(0, 0, 0, 0.2);
+    border:1px solid #00adfd;
+    color: #00adfd;
+}
+.darkthema #togglebutton{
+    background-color: #ffffff;
+}
+.darkthema #togglebutton:after{
+    background-color: transparent;
+    box-shadow: 10px 10px #000000;
+    top: -4px;
+    left: 30px;
+}
+
+.show{
+ 
+    grid-area: show;
+    color:#00adfd;
+    vertical-align:bottom;
+    text-align: right;
+    padding-right: 20px;
+    
+}
+
+
+
+
+input[type="text"]{
+
+
+    height: 100%;
+    color:#00adfd;
+    vertical-align:bottom;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#btn_div>input[type="button"]{
+
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+
+}
+
+
+
+.b7{
+
+    grid-area: b7;
+
+}
+
+.b8{
+
+    grid-area: b8;
+
+}
+
+.b9{
+
+    grid-area: b9;
+
+}
+
+.b4{
+
+    grid-area: b4;
+
+}
+
+.b5{
+
+    grid-area: b5;
+
+}
+
+.b6{
+
+    grid-area: b6;
+
+}
+
+.b1{
+
+    grid-area: b1;
+
+}
+
+.b2{
+
+    grid-area: b2;
+
+}
+
+.b3{
+
+    grid-area: b3;
+
+}
+
+.b0{
+
+    grid-area: b0;
+
+}
+
+.back{
+
+    grid-area: back;
+
+}
+
+.divide{
+
+    grid-area: divide;
+
+}
+
+.multiple{
+
+    grid-area: multiple;
+
+}
+
+.percent{
+
+    grid-area: percent;
+
+}
+
+.dot{
+
+    grid-area: dot;
+
+}
+
+.addition{
+
+    grid-area: addition;
+
+}
+
+.clearall{
+
+    grid-area: clearall;
+
+}
+
+.nthroot{
+
+    grid-area: nthroot;
+
+}
+
+.equals{
+
+    grid-area: equals;
+
+}
+
+.minus{
+
+    grid-area: minus;
+
+}
+
+  
